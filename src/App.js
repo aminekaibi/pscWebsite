@@ -124,7 +124,7 @@ function App() {
 
   const getResultMessage = () => {
     const result = calculateResult();
-    const { hypoScore, hyperScore, totalScore, hypoPercentage, hyperPercentage } = result;
+    const { totalScore, hypoPercentage, hyperPercentage } = result;
 
     // High risk thresholds
     if (totalScore >= 8 || hypoPercentage >= 60 || hyperPercentage >= 60) {
