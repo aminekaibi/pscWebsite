@@ -421,38 +421,6 @@ function App() {
           </div>
         </section>
 
-        {/* Our Team Section - 4 columns */}
-        <section className="info-section team-section">
-          <div className="info-container">
-            <h2 className="section-title">Our Team</h2>
-            <p className="team-intro">
-              The people behind ThyroCare.
-            </p>
-            <div className="team-grid">
-              {[
-                { img: 'team1.png', name: 'Your Name' },
-                { img: 'team2.png', name: 'Your Name' },
-                { img: 'team3.png', name: 'Your Name' },
-                { img: 'team4.png', name: 'Your Name' },
-                { img: 'team5.png', name: 'Your Name' },
-                { img: 'team6.png', name: 'Your Name' },
-                { img: 'team7.png', name: 'Your Name' },
-              ].map((member, index) => (
-                <div key={index} className="team-card">
-                  <div className="team-photo-wrap">
-                    <img
-                      src={`${process.env.PUBLIC_URL}/team/${member.img}`}
-                      alt={member.name}
-                      className="team-photo"
-                    />
-                  </div>
-                  <p className="team-name">{member.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Find a Clinic Section */}
         <section className="info-section map-section">
           <div className="info-container">
@@ -496,6 +464,39 @@ function App() {
                   </Marker>
                 ))}
               </MapContainer>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Team Section - 4 columns */}
+        <section className="info-section team-section">
+          <div className="info-container">
+            <h2 className="section-title">Our Team</h2>
+            <p className="team-intro">
+              The people behind ThyroCare.
+            </p>
+            <div className="team-grid">
+              {[
+                { img: 'team1.png', name: 'Kaibi mohamed amine' },
+                { img: 'team2.png', name: 'Baklouti sadek' },
+                { img: 'team3.png', name: 'Ennouri jihen' },
+                { img: 'team4.png', name: 'Boulaoued tasnime' },
+                { img: 'team5.png', name: 'Krifa meriem' },
+                { img: 'team6.png', name: 'Hmila israa' },
+                { img: 'team7.png', name: 'Braham aicha' },
+                { img: 'team8.png', name: 'Fathallah rima' },
+              ].map((member, index) => (
+                <div key={index} className="team-card">
+                  <div className="team-photo-wrap">
+                    <img
+                      src={`${process.env.PUBLIC_URL}/team/${member.img}`}
+                      alt={member.name}
+                      className="team-photo"
+                    />
+                  </div>
+                  <p className="team-name">{member.name}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
